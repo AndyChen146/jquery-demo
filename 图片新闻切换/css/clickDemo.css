@@ -1,0 +1,59 @@
+body{
+	margin:50px;
+	background: #f3f2f2;
+}
+.wrap{
+	width: 500px;
+	height: 350px;
+	overflow: hidden;
+	position: relative;
+}
+.wrap ul{
+	position: absolute;
+	left: 0;
+	top:0;
+	width: 2500px;
+}
+.wrap ul li{
+	width: 500px;
+	float: left;
+}
+.btn-left{
+	width: 45px;
+	height: 45px;
+	position: absolute;
+	background: url(../images/btn_l.png) no-repeat center center;
+	left:0;
+	top:150px;
+	cursor: pointer;
+	z-index:99;
+}
+.btn-right{
+	width: 45px;
+	height: 45px;
+	position: absolute;
+	background: url(../images/btn_r.png) no-repeat center center;
+	right:0;
+	top:150px;
+	cursor: pointer;
+	z-index:99;
+}
+.wrap ol{
+	position: absolute;
+	right: 10px;
+	bottom: 10px;
+}
+.wrap ol li{
+	width: 5px;
+	height: 5px;
+	float: left;
+	background: #d4d4d4;
+	margin-left: 5px;
+	color: #339999;
+	font-size: 13px;
+	border-radius: 50%;
+}
+.wrap ol li.cur{
+	background: #339999;
+	color: #000;
+}

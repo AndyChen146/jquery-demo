@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="../reset.css">
+	<script type="text/javascript" src="../jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/demo.css">
+	<script type="text/javascript" src="js/demo.js"></script>
+</head>
+<body>
+	<div class="contation">
+		<div class="nav">导航</div>
+		<div class="main"></div>
+		<div class="footer">bottom</div>
+
+		<div class="backTop">顶部</div>
+	</div>
+
+	<script type="text/javascript">
+	$(function(){
+		$(document).scroll(function(){
+			var scrollHeight = $(window).scrollTop();
+			if(scrollHeight > 100){
+				$(".backTop").show("slow");
+			}
+			if(scrollHeight <= 100){
+				$(".backTop").hide("slow");
+			}
+		});
+		$(".backTop").click(function(){
+			$("body,html").animate({scrollTop:0},1000);
+			return false;
+
+		});
+	});
+	</script>
+</body>
+</html>

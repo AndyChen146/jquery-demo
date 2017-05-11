@@ -1,0 +1,154 @@
+*{
+	padding: 0;
+	margin: 100px;
+
+}
+button{
+	margin-left: 10px;
+	padding: 8px 20px;
+	letter-spacing: 1px;
+	font-size: 15px;
+	border:none;
+	cursor: pointer;
+	border-radius:3px;
+	text-align: center;	
+}
+/******************************/
+.btn1{
+	text-shadow: 1px 1px 1px #fff;
+	color: #8c96a0;
+	border:1px solid #dce1e6;
+	box-shadow: 0 1px 2px #fff inset,0 -1px 0px #a8abae inset;
+	background: -webkit-linear-gradient();
+	background: linear-gradient(to top,#f2f3f7,#e4e8ec)	
+}
+.btn1:hover{
+	background: -webkit-linear-gradient(#f2f3f7, #ebeced);
+	background: -o-linear-gradient(#f2f3f7, #ebeced);
+	background: linear-gradient(#f2f3f7, #ebeced);
+}
+.btn1:active{
+	box-shadow: 0 1px 1px #a8abae inset,0 3px 0 #fff;
+	background: -webkit-linear-gradient(to top,#e4e8ec,#e4e8ec);
+	background: -moz-linear-gradient(to top,#e4e8ec,#e4e8ec);
+	background: linear-gradient(to top,#e4e8ec,#e4e8ec);
+}
+/******************************/
+.btn2{
+	background-color: #2daebf;
+	border-color: #238896;
+	color: #fff;
+	-webkit-animation-name:greenPluse;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-duration:3s;
+}
+@-webkit-keyframes greenPluse{
+	form{
+		background: #749a02;
+		-webkit-box-shadow:0 0 9px #333;
+	}
+	50%{
+		background: #91bd09;
+		-webkit-box-shadow:0 0 18px #91bd09;
+	}
+	to{
+		background: #749a02;
+		-webkit-box-shadow:0 0 9px #333;
+	}
+}
+/******************************/
+.btn3{
+	color: #fff; 
+	border:4px outset aqua; 
+	background-color:#00ffff; 
+}
+.btn3:hover{
+	background-color: #00c0c0; 
+	color:#000000; 
+	border:4px inset aqua; 
+}
+/*****************************/
+.btn4{
+	
+	font-weight: bold;
+	text-shadow: rgba(255,255,255,.5) 0 1px 0;
+	border-top:1px solid rgba(255,255,255,0.8);
+	border-bottom: 1px solid rgba(0,0,0,0.1);
+	transition: background .2s ease-in-out;
+	color: hsl(0, 0%, 40%) !important; 
+	box-shadow: inset rgba(255,254,255,0.6) 0 0.3em .3em, 
+				inset rgba(0,0,0,0.15) 0 -0.1em .3em, /* inner shadow */ 
+				hsl(0, 0%, 60%) 0 .1em 3px, 
+				hsl(0, 0%, 45%) 0 .3em 1px, /* color border */ 
+				rgba(0,0,0,0.2) 0 .5em 5px;
+}
+.btn4:hover{
+	background-color:hsl(0, 0%, 90%);
+}
+.btn4:active{
+	box-shadow: inset rgba(255,255,255,0.6) 0 0.3em .3em, 
+				inset rgba(0,0,0,0.2) 0 -0.1em .3em, /* inner shadow */ 
+				rgba(0,0,0,0.4) 0 .1em 1px, /* border */
+				rgba(0,0,0,0.2) 0 .2em 6px; /* drop shadow */
+	transform:translateY(.2em);
+}
+/*******************************/
+.btn5{
+	background: #4863ae;
+	font-size:13px;
+	color: #fff;
+	margin: 8px 4px;
+	padding: 0em .95em 0em 0em;
+	border-radius: .3em;
+	font: normal 100%/2.1 "Lucida Grande", Tahoma, sans-serif;
+	border: 1px solid #777;
+	box-shadow: inset 0 0.08em 0 rgba(255,255,255,0.4), inset 0 0 0.1em rgba(255,255,255,0.9);
+	text-shadow: 0 1px 0 rgba(0,0,0,0.5)
+}
+.btn5:before{
+	content:"f";
+	border-right: 0.075em solid rgba(0,0,0,0.1);
+    float: left;
+    font: 120%/1.65 zocial;
+    font-style: normal;
+    font-weight: normal;
+    margin: 0 0.5em 0 0;
+    padding: 0 0.5em;
+    text-align: center;
+    text-decoration: none;
+    text-transform: none;
+    box-shadow: 0.075em 0 0 rgba(255,255,255,0.25);
+    -webkit-font-smoothing: antialiased;
+}
+/***********************************/
+.btn6{
+	background-color: #3bb3e0;
+	color: #fff;
+	border-radius: 5px;
+	box-shadow: inset 0 1px 0 #2ab7ec,0 5px 0 #156785,0 10px 5px #999;
+	position: relative;
+}
+.btn6:before{
+	background-color: #2591b4;
+	background-image: url(https://tympanus.net/Tutorials/CSSButtonsPseudoElements/images/right_arrow.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	content: "";
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	right: 10px;
+	top:30%;
+	border-radius: 50%;
+	box-shadow: inset 0 1px 0px #052756,0px 1px 0px #60c9f0;
+}
+.btn6:active{
+	top:3px;
+	box-shadow: inset 0px 1px 0px #2ab7ec, 0px 2px 0px 0px #156785, 0px 5px 3px #999;
+}
+.btn6:active:before{
+	top:3px;
+	box-shadow: inset 0px 1px 0px #60c9f0, 0px 3px 0px #0e3871, 0px 6px 3px #1a80a6;
+}
+
+

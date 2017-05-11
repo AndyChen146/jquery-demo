@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="../reset.css">
+	<script type="text/javascript" src="../jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/demo.css">
+	<script type="text/javascript" src="js/dialog.js"></script>
+	<script type="text/javascript">
+	$(function(){
+		$("#btn").click(function(){	
+			$(".test").popWin();
+		});
+	});
+	</script>
+</head>
+<body>
+	<div class="test"></div>
+	<div class="main">
+		<div class="top">
+			<div class="buttons">
+				<a class="colse-btn" title="关闭"></a>
+			</div>
+			<span>登录</span>
+		</div>
+		<div class="center"></div>
+		<div class="bottom"></div>
+	</div>
+	<input type="submit" id="btn" name="" value="登录">
+</body>
+</html>

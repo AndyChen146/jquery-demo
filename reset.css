@@ -1,0 +1,30 @@
+/***************统一样式****************************/
+@charset "utf-8";
+body,div,ul,li,ol,h1,h2,h3,h4,h5,h6,hr,p,form,dl,dt,dd,pre,input,button,th,td,textarea{
+    margin: 0;
+    padding: 0;
+}
+
+a,a:hover{ text-decoration:none; color:#333}
+table{
+    border-collapse:collapse;
+}
+button,input{
+    font-family: '微软雅黑';
+}
+ul,li{
+    list-style: none;
+    display: block;
+}
+input,select,button{
+    outline: none;
+}
+img{
+    border: 0;
+}
+body{
+    background: #ffffff;
+    font-family: '微软雅黑';
+    color: #333;
+}
+

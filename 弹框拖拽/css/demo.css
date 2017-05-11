@@ -1,0 +1,70 @@
+.main{
+	width: 400px;
+	display: none;
+	z-index: 100;
+	background-color: #ffffff;
+	border:1px solid #F2F2F2;
+}
+.top{
+	height: 40px;
+	background-color:#F7F7F7;
+	cursor:move;
+	position: relative;
+}
+.top span{
+	width:auto;
+	height: 18px;
+	font-size: 16px;
+	display: block;
+	line-height: 40px;
+	margin-left: 25px;
+	letter-spacing: 3px;
+}
+.buttons{
+	width: 16px;
+	height: 16px;
+	position: absolute;
+	right: 10px;
+	top:12px;
+}
+.buttons a{
+	width: 16px;
+	height: 16px;
+	display: block;
+	margin: 0;
+	padding: 0;
+	outline: 0;
+}
+.colse-btn{
+	background-image: url(../images/icons.png);
+	background-position: -56px -48px;
+}
+.colse-btn:hover{
+	background-image: url(../images/icons.png);
+	background-position: -72px -48px;
+	cursor: pointer;
+}
+
+
+.center{
+	height: 200px;
+	background-color: #ffffff;
+}
+.bottom{
+	height: 40px;
+	background-color: #ffffff;
+	border-top:1px solid #eeeeee;
+}
+.mask{
+	position: absolute;
+	top:0px;
+	left:0px;
+	background-color:#D9D9D9;
+	opacity:0.8;
+	
+}
+
+.pop-win{
+	background: red;
+	
+}

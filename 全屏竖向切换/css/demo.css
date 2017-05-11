@@ -1,0 +1,51 @@
+html,body{
+	height: 100%;
+	overflow: hidden;
+}
+.container,.sections,.section{
+	height: 100%;
+	position: relative;
+}
+.section{
+	background-color:#000;
+	background-position: 50% 50%;
+	background-size: cover; 
+	
+}
+
+.section0{
+	background: url(../images/1.jpg);
+	
+}
+.section1{
+	background: url(../images/2.jpg);
+}
+.section2{
+	background: url(../images/3.jpg);
+}
+.section3{
+	background: url(../images/4.jpg);
+}
+
+.sections-indications{
+	position: absolute;
+	top: 50%;
+    right: 20px;
+    z-index: 15;
+    width: 1%;
+    padding-left: 0;
+    list-style: none;
+    text-align: center;
+}
+.sections-indications li{
+	width: 10px;
+	height: 10px;
+	border-radius: 10px;
+	margin:8px;
+	border:1px solid #fff;
+	cursor: pointer;
+}
+.active{
+	background: #fff;
+}
+
