@@ -9,6 +9,30 @@
 	<script type="text/javascript" src="js/demo.js"></script>
 </head>
 <body>
+	<div class="tab js-tab" data-config='{
+											"triggerType":"mousemove",
+											"effect":"fade",
+											"invoke":2,
+											"auto":1000
+										}'>
+		<ul class="tab-nav">
+			<li class="active"><a href="javascript:void(0)">新闻</a></li>
+			<li><a href="javascript:void(0)">娱乐</a></li>
+			<li><a href="javascript:void(0)">电影</a></li>
+			<li><a href="javascript:void(0)">科技</a></li>
+		</ul>
+		<div class="tab-content">
+			<div class="content-item current"><img src="images/1.jpg"></div>
+			<div class="content-item"><img src="images/2.jpg"></div>
+			<div class="content-item"><img src="images/3.jpg"></div>
+			<div class="content-item"><img src="images/4.png"></div>
+		</div>
+	</div>
 
+	<script type="text/javascript">
+	$(function(){
+		var tab1 = new Tab($(".js-tab").eq(0));
+	});
+	</script>
 </body>
 </html>
